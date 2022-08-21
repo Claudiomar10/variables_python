@@ -32,27 +32,33 @@ E) Exponente/Potencia
 print('¡Nuestra primera calculadora!')
 # Empezar aquí la resolución del ejercicio
 #trabajaremos con tres decimales, utilizamos round para truncar los decimales
+
 numero_1 = float(input ("ingrese un numero: "))
 numero_2 = float(input("Ingrese un numero: "))
+numero_11 = round(numero_1,3)
+numero_22 = round(numero_2,3)
+#print (numero_11)  lo utilice para probar round, funciona el print pero al operar
+#print (numero_22)  con numero_11, y numero_22., no logro truncar los decimales
+
 
 #SUMA
 suma = numero_1 + numero_2
-print ("La suma de los dos numeros ingresados es: ",round(suma,3))
+print ("La suma entre",round(numero_1,3),"y",round(numero_2,3),"es:",round(suma,3))
 
 #RESTA
 resta = numero_1 - numero_2
-print ("La resta de los dos numeros ingresados es: ",round(resta,3))
+print ("La resta entre",round(numero_1,3),"y",round(numero_2,3),"es:",round(resta,3))
 
 #MULTIPLICACION
 multiplicacion = numero_1 * numero_2
-print ("La multiplicacion de los dos numeros ingresados es: ",round(multiplicacion,3))
+print ("La multiplicacion entre",round(numero_1,3),"y",round(numero_2,3),"es:",round(multiplicacion,3))
 
 #DIVISION
 division = numero_1 / numero_2
-print ("La division de los dos numeros ingresados es: ",round(division,3))
+print ("La division entre",round(numero_1,3),"y",round(numero_2,3),"es:",round(division,3))
 #NOTA: aca no contemplamos la posibilidad que el segundo numero ingresado sea igual a cero-- ver ese caso
 
 #EXPONENTE/POTENCIA
 potencia = numero_1 ** numero_2
-print ("La potencia de el primer numero ingresado, elevado al segundo numero ingresado, es: ",round(potencia,3))
+print ("La potencia entre",round(numero_1,3),"elevado a",round(numero_2,3),"es: ",round(potencia,3))
 
